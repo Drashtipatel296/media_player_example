@@ -74,7 +74,6 @@ class HomePage extends StatelessWidget {
                   }).toList(),
                   carouselController: controller,
                   options: CarouselOptions(
-                    // autoPlay: true,
                     aspectRatio: 10/16,
                     enlargeCenterPage: true,
                     onPageChanged: (index, reason) {
