@@ -2,10 +2,9 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:media_player_example/provider/slider_provider.dart';
 import 'package:provider/provider.dart';
-
 import '../utils/image_list.dart';
 
-final CarouselController _controller = CarouselController();
+final CarouselController controller = CarouselController();
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -42,14 +41,12 @@ class HomePage extends StatelessWidget {
                     return Column(
                       children: [
                         Padding(
-                          padding: EdgeInsets.only(top: 60),
+                          padding: const EdgeInsets.only(top: 60),
                           child: Stack(
                             children: [
                               Container(
                                 height: 530,
-                                // width: 300,
                                 decoration: BoxDecoration(
-                                  // color: Colors.black,
                                   borderRadius: BorderRadius.circular(20),
                                   image: DecorationImage(
                                     fit: BoxFit.cover,
@@ -61,7 +58,7 @@ class HomePage extends StatelessWidget {
                                   padding: const EdgeInsets.all(15),
                                   child: Text(
                                     item['text'],
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontSize: 30,
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
@@ -75,9 +72,9 @@ class HomePage extends StatelessWidget {
                       ],
                     );
                   }).toList(),
-                  carouselController: _controller,
+                  carouselController: controller,
                   options: CarouselOptions(
-                    autoPlay: true,
+                    // autoPlay: true,
                     aspectRatio: 10/16,
                     enlargeCenterPage: true,
                     onPageChanged: (index, reason) {
@@ -89,7 +86,7 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: imgList.asMap().entries.map((entry) {
                     return GestureDetector(
-                      onTap: () => _controller.animateToPage(entry.key),
+                      onTap: () => controller.animateToPage(entry.key),
                       child: Container(
                         width: 12.0,
                         height: 12.0,
