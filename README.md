@@ -45,15 +45,25 @@ CarouselSlider(
 )
  ```
 
-# Video 
+## Screenshots
 
 <div align="center">
-  <video src="https://github.com/Drashtipatel296/media_player_example/assets/143180636/4ba7f39f-26f3-452c-ac4c-ee9361e4ea2e"></video>
+    <img src="https://github.com/Drashtipatel296/media_player_example/assets/143180636/a9652f59-34e1-40e2-9c49-b5f7655ae21e" height=500px>
+    <img src="https://github.com/Drashtipatel296/media_player_example/assets/143180636/e2282de8-0566-4175-9309-53dc5f6236f5" height=500px>
+    <img src="https://github.com/Drashtipatel296/media_player_example/assets/143180636/71bc2624-282e-4d54-b88b-a846465a66a8" height=500px>
+    <img src="https://github.com/Drashtipatel296/media_player_example/assets/143180636/8ef55f25-89aa-4a97-a6d5-636c5fa5cee2" height=500px>
+</div>
+
+## Video 
+
+<div align="center">
+  <video src="https://github.com/Drashtipatel296/media_player_example/assets/143180636/491158f7-16de-41ba-aeb1-efa596c3a0d1"></video>
 </div>
 
 <div align="center">
 <a href="https://github.com/Drashtipatel296/media_player_example/tree/master/lib">-> Go To Code <-</a>
 </div>
+
 
 
 
